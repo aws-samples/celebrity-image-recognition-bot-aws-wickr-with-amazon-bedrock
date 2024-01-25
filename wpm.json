@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "celeb-rekog_bot",
+      "script": "./bot-code.js",
+      "instances": 1,
+      "max_memory_restart": "128M",
+      "node_args": [
+        "--nouse-idle-notification"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "args": []
+    }
+  ],
+  "name": "celeb-rekog_bot"
+}

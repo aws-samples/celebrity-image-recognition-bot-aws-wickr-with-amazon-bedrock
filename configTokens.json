@@ -1,0 +1,25 @@
+{
+    "supportAdministrators":false,
+    "supportVerification":false,
+    "integration":"celeb-rekog_bot",
+    "tokens":[
+      {
+        "token": "AWS_REGION",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the region to use",
+        "message": "Please enter the region to use",
+        "required": true,
+        "default": "us-east-1"
+      },
+      {
+        "token": "AWS_BUCKET",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the name of the Amazon S3 bucket where you will store images for processing",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      }
+    ]
+}

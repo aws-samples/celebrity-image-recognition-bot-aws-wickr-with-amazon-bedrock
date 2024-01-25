@@ -1,0 +1,24 @@
+{
+  "name": "celeb-rekog_bot",
+  "version": "1.0.0",
+  "description": "Using the AWS SDK for JavaScript V3 to create a bot that recognises celebrities in images.",
+  "main": "bot-code.js",
+  "author": "charlcch",
+  "license": "MIT-0",
+  "scripts": {
+    "start": "nohup wpm2 start --no-metrics ./wpm.json >>wpm2.output 2>&1 & echo $! > $(cat pidLocation.json)",
+    "stop": "kill $(cat $(cat pidLocation.json))",
+    "restart": "kill $(cat $(cat pidLocation.json)) && nohup wpm2 start --no-metrics ./wpm.json >>wpm2.output 2>&1 & echo $! > $(cat pidLocation.json)"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.478.0",
+    "@aws-sdk/client-s3": "^3.478.0",
+    "@aws-sdk/client-rekognition": "^3.478.0",
+    "dotenv": "^8.2.0",
+    "filereader": "^0.10.3",
+    "prompt": "^1.0.0",
+    "uuid": "^9.0.1",
+    "wickrio-bot-api": "6.20.x"
+  },
+  "devDependencies": {}
+}

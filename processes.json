@@ -1,0 +1,40 @@
+{
+  "apps": [
+    {
+      "name": "celeb-rekog_bot",
+      "args": [],
+      "script": "node bot-code.js",
+      "exec_interpreter": "none",
+      "autorestart": true,
+      "watch": [
+        "package.json"
+      ],
+      "ignore_watch": [
+        ".git"
+      ],
+      "env": {
+        "tokens": {
+          "WICKRIO_BOT_NAME": {
+            "value":"",
+            "encrypted": false
+          },
+          "AWS_REGION": {
+            "value":"us-east-1",
+            "encrypted": false
+          },
+          "AWS_BUCKET": {
+            "value": "default",
+            "encrypted": false
+          }
+        },
+        "log_tokens": {
+          "LOG_LEVEL": "debug",
+          "LOG_FILE_SIZE": "10m",
+          "LOG_MAX_FILES": "5"
+        }
+      },
+      "out_file": "log.output",
+      "error_file": "err.output"
+    }
+  ]
+}
