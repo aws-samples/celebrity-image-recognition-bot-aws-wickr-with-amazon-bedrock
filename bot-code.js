@@ -112,7 +112,7 @@ async function createResponse(request, vGroupID) {
 
   const bedrockclient = new BedrockRuntimeClient({region: REGION,});
 
-  const aiModelId = 'anthropic.claude-instant-v1';
+  const aiModelId = 'anthropic.claude-v2';
   
   const invokeModelParams = {
     body: JSON.stringify({
