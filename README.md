@@ -30,7 +30,7 @@ This sample will allow you to deploy a bot to your AWS Wickr network that will t
             ],
             "Resource": [
                 "arn:aws:s3:::<amazon-s3-bucket>/*",
-                "arn:aws:bedrock:<aws-region>::foundation-model/anthropic.claude-instant-v1"
+                "arn:aws:bedrock:<region>::foundation-model/anthropic.claude-v2"
             ]
         }
     ]
